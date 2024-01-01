@@ -1,0 +1,141 @@
+// .Signup{}
+.Signup{
+  margin: 0.5% auto;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+  display: flex;
+  overflow: hidden;
+  
+  .img-sec{
+    width: 40%;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  .login-form-sec{
+    width: 60%;
+    padding: 56px 35px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .login-details{
+      div:nth-child(1){
+        width: 100%;
+      }
+
+      .error-msg{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: red;
+        margin: 5px 0;
+      }
+
+      .login-password-details, .login-email-details{
+        margin: 3% 0 1%;
+
+        div:nth-child(1){
+          width: 100%;
+        }
+      }
+
+      .terms-policy{
+        display: flex;
+        align-items: center;
+        gap: 1%;
+        margin-top: 10%;
+        color: #878787;
+        font-size: 12px;
+        font-weight: 400;
+
+        p:nth-child(2),
+        p:nth-child(3){
+          color: #2874f0;
+        }
+      }
+
+      button{
+        margin: 5% 0;
+        background: #fb641b;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+        border: none;
+        color: #fff;
+        width: 100%;
+        height: 48px;
+        font-size: 16px;
+        font-family: inherit;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+      }
+    }
+
+
+    .create-acc-details{
+
+      button{
+        border: none;
+        outline: none;
+        color: #2874f0;
+        background-color: #fff;
+        width: 100%;
+        height: 48px;
+        font-size: 15px;
+        font-family: inherit;
+        font-weight: 500;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        transition: 0.5s;
+        cursor: pointer;
+      }
+
+      button:hover{
+        box-shadow: 0 4px 6px 0 rgba(0,0,0,.12);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+  .Signup{
+    width: 99%;
+
+    .img-sec{
+      display: none;
+    }
+
+    .login-form-sec{
+      width: 100%;
+      padding: 24px;
+
+      .login-details{
+        .terms-policy{
+          white-space: nowrap;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .Signup{
+    width: 70%;
+
+    .login-details{
+      .terms-policy{
+        white-space: nowrap;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

@@ -1,0 +1,638 @@
+.ItemList{
+    width: 98%;
+    height: 100vh;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: scroll;
+
+    .filter-sec{
+      background-color: #fff;
+      width: 18%;
+
+      .title-sec{
+        padding: 17px;
+        border-bottom: 1px solid #e3dcdc;
+
+        p{
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+        }
+      }
+      .categories-sec{
+        padding: 16px;
+        border-bottom: 1px solid #e3dcdc;
+
+        p:nth-child(1){
+          font-size: 12px;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+
+        .varities-sec{
+          margin: 10px 0px;
+          display: flex;
+          align-items: center;
+          color: #b2b2b2;
+          font-size: 13px;
+          font-weight: 400;
+          letter-spacing: 0.5px;          
+        }
+
+        p:nth-child(3){
+          font-size: 13.5px;
+          font-weight: 500;
+          margin:12.5px 0 0 12.5px;
+          padding-bottom: 10px;
+          color: #212121;
+        }
+      }
+      .brandName, .ratings, .fAssured, .storageCapacity, .RAM{
+        padding: 16px;
+        border-bottom: 1px solid #e3dcdc;
+
+        div:nth-child(1){
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          
+          p{
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+          }
+        }
+        div:nth-child(2), div:nth-child(3), div:nth-child(4), div:nth-child(5){
+          display: flex;
+          align-items: center;
+          margin: 12px 0px;
+          gap: 1%;
+          cursor: pointer;
+          
+          input{
+            cursor: pointer;
+          }
+          
+          label{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            display: flex;
+            gap: 5px;
+          }
+          img{
+            width: 24%;
+            height: 18px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+    .itemList-sec{
+      width: 81%;
+      overflow-y: scroll;
+
+      div{
+      background-color: #fff;
+
+      .file-path{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        gap: 2px;
+        padding:10px;
+
+        li,a{
+          cursor: pointer;
+          transition: 0.5s;
+          color: #878787;
+        }
+        svg{
+          color: #878787;
+        }
+        a:hover{
+          color: #2874f0;
+          transition: 0.5s;
+        }
+      }
+
+      .mob-types{
+        display: flex;
+        font-size: 12px;
+        padding:0px 10px;
+
+        li{
+          color: #2874f0;
+          cursor: pointer;
+        }
+      }
+
+      .title-sec{
+        display: flex;
+        align-items: center;
+        margin: 8px 0px;
+
+        span:nth-child(1){
+          font-weight: 500;
+          font-size: 16px;
+          margin: 8px 10px; 
+          display: inline-block;      
+        }
+        span:nth-child(2){
+          display: inline-block;
+          font-size: 12.5px;
+          color: #878787;
+        }
+      }
+
+      .sort-sec{
+        display: flex;
+        gap: 1%;
+        width: 100%;
+        padding:0px 10px;
+        border-bottom: 1px solid #f1f3f6;
+        font-size: 13.5px;
+
+        .sortby{
+          font-weight: 600;
+        }
+
+        ul{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          li{
+            cursor: pointer;
+            font-weight: 500;
+            padding-bottom: 5px;
+            border-bottom: 2.5px solid transparent;
+          }
+          
+          .default{
+            color: black;
+          }
+
+          .blue{
+            color: #2874f0;
+            border-color:  #2874f0;
+          }
+
+          li:hover{
+            color: #2874f0;
+            font-weight: 500;
+          }
+        }
+      }
+      .product-sec{
+        .content-sec{
+          border-bottom: 1px solid #e3dcdc;
+          margin-bottom: 10px;
+          display: flex;
+
+          .imge-content-sec{
+            padding: 20px 40px;
+            display: flex;
+            gap: 5%;
+            width: 50%;
+
+            .img-sec{
+              width: 28%;
+
+              img{
+                width: 100%;
+              }
+
+              .addtocompare{
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                font-size: 14px;
+                margin-top: 8px;
+                white-space: nowrap;
+              }
+            }
+
+            svg:nth-child(2){
+              color: #6767;
+              font-size: 16px;
+              width: 2.8%;
+              cursor: pointer;
+            }
+
+            .content{
+              .itemName-sec{
+                font-weight: 500;
+                font-size: 18px;
+                display: block;
+                cursor: pointer;
+              }
+
+              .ratings-sec{
+                margin: 6px 0px 10px;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                gap: 1%;
+
+                span:nth-child(1){
+                  color: #fff;
+                  padding: 2px 4px 2px 6px;
+                  border-radius: 3px;
+                  font-weight: 500;
+                  font-size: 12px;
+                  background-color: #388e3c;
+                  display: flex;
+                  align-items: center;
+                }
+
+                span:nth-child(2){
+                  padding-left: 8px;
+                }
+
+                span:nth-child(2),
+                span:nth-child(3){
+                  font-weight: 500;
+                  color: #878787;
+                  font-size: 13px;
+                }
+              }
+
+              .list-sec{
+                line-height: 22px;
+
+                li{
+                  color: #212121;
+                  font-weight: 400;
+                  font-size: 14px;
+                  letter-spacing: 0.5px;
+                }
+
+                li::before{
+                  content: "•";
+                  color: #c2c2c2;
+                  padding-right: 8px;
+                }
+              }
+            }
+          }
+
+          .price-assure-sec{
+            padding: 20px 20px 20px 40px;
+            display: flex;
+            gap: 4%;
+            width: 34%;
+
+            .price-sec{
+              .sellPrice{
+                font-weight: 600;
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+              }
+
+              .strike-offer-price{
+                margin-top: 5px;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+
+                .strikePrice{
+                  display: flex;
+                  align-items: center;
+                  text-decoration: line-through;
+                  font-size: 13px;
+                  color: #878787;
+                }
+                .offers{
+                  color: #388e3c;
+                  font-size: 13px;
+                  letter-spacing: -.2px;
+                  font-weight: 500;
+                  white-space: nowrap;
+                }
+              }
+            }
+            .flipkart-assure{
+
+              img{
+                width: 25%;
+              }
+            }
+
+          }
+        }
+        .content-sec:hover 
+        .itemName-sec{
+          color: #2874f0;
+        }
+      }
+      }
+      .Lookingfor{
+        background-color: #fff;
+        font-size: 14px;
+        padding:16px;
+        margin: 20px 0px;
+        display: flex;
+        align-items: center;
+
+        span{
+          font-weight: 500;
+          font-size: 16px;
+        }
+        
+        .yesNo{
+          margin-left: 24px;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+
+          button{
+            border-radius: 2px;
+            border: 1px solid #d7d7d7;
+            margin-right: 8px;
+            font-weight: 500;
+            background-color: transparent;
+            height: 34px;
+            width: 74px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg{
+              font-size: 20px;
+            }
+          }
+
+          button:nth-child(1){
+            svg{
+              color: #2874f0;
+            }
+          }
+
+          button:nth-child(2){
+            svg{
+              color: red;
+            }
+          }
+        }
+      }
+    }
+    .itemList-sec::-webkit-scrollbar {
+      display: none;
+  }
+}
+
+.ItemList::-webkit-scrollbar{
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+ .ItemList{
+
+      .filter-sec{
+        display: none;
+      }
+
+      .itemList-sec{
+        width: 100%;
+        height: max-content;
+        overflow: hidden;
+
+        div{
+          .mob-types{
+            font-size: 64%;
+            flex-wrap: wrap;
+            white-space: nowrap;
+          }
+          .title-sec{
+            span:nth-child(1){
+              font-size: 80%;
+              white-space: nowrap;
+              margin-left: 5px;
+            }
+            span:nth-child(2){
+              font-size: 75%;
+              white-space: nowrap;
+            }
+          }
+          .sort-sec{
+            white-space: nowrap;
+            ul{
+              margin-left: 5px;
+              flex-wrap: wrap;
+            }
+          }
+          .product-sec{
+            .content-sec{
+              padding: 10px 10px;
+              flex-direction: column;
+
+              .imge-content-sec{
+                padding: 5px;
+                width: 100%;
+                gap: 2%;
+                flex-direction: column;
+
+                .img-sec{
+                   width: 35%;   
+
+                  .addtocompare{
+                    span{
+                      white-space: nowrap;
+                      margin: 5px 0px;
+                    }
+                  }
+                }
+
+                .content{
+                  border-top: 1px solid #e3dcdc;
+                  width: 100%;
+
+                  .itemName-sec{
+                    font-size: 96%;
+                  }
+                  .ratings-sec{
+                    span:nth-child(1),span:nth-child(2),span:nth-child(3){
+                      font-size: 84%;
+                    }
+                  }
+                  .list-sec{
+                    li{
+                      font-size: 78%;
+                      font-weight: 400;
+                      letter-spacing: 0;
+                    }
+                  }
+                }
+              }
+
+              svg:nth-child(2){
+                display: none;
+              }
+
+              .price-assure-sec{
+                padding: 5px;
+                flex-direction: column;
+                width: 28%;
+                gap: 1%;
+
+                .price-sec{
+                  .sellPrice{
+                    font-size: 100%;
+                  }
+                  .strike-offer-price{
+                    .strikePrice{
+                      font-size: 78%;
+                    }
+                    .offers{
+                      font-size: 70%;
+                    }
+                  }
+                }
+
+                .flipkart-assure{
+                  width: 50%;
+
+                  img{
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+          
+        }
+      }
+  }
+  
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+.ItemList{
+
+      .filter-sec{
+        width: 25%;
+
+        .title-sec p{
+          font-size: 98%;
+        }
+        .categories-sec{
+          .varities-sec{
+            font-size: 80%;
+          }
+        }
+        .brandName, .ratings, .fAssured, .storageCapacity, .RAM{
+          div:nth-child(1){
+            p{
+              font-size: 80%;
+            }
+          }
+          div:nth-child(2), div:nth-child(3), div:nth-child(4), div:nth-child(5){
+            label{
+              font-size: 75%;
+            }
+            img{
+              width: 36%;
+            }
+          }
+        }
+      }
+
+      .itemList-sec{
+        width: 73%;
+        height: max-content;
+        overflow: hidden;
+
+        div{
+          .mob-types{
+            font-size: 64%;
+            flex-wrap: wrap;
+            white-space: nowrap;
+          }
+          .sort-sec{
+            ul{
+              margin-left: 5px;
+            }
+          }
+          .product-sec{
+            .content-sec{
+              padding: 10px 10px;
+
+              .imge-content-sec{
+                padding: 5px;
+                width: 100%;
+                gap: 2%;
+
+                .img-sec{
+                  .addtocompare{
+                    span{
+                      font-size: 75%;
+                    }
+                  }
+                }
+
+                .content{
+                  .itemName-sec{
+                    font-size: 96%;
+                  }
+                  .ratings-sec{
+                    span:nth-child(1),span:nth-child(2),span:nth-child(3){
+                      font-size: 84%;
+                    }
+                  }
+                  .list-sec{
+                    li{
+                      font-size: 78%;
+                      font-weight: 400;
+                      letter-spacing: 0;
+                    }
+                  }
+                }
+              }
+
+              svg:nth-child(2){
+                font-size: 100%;
+              }
+
+              .price-assure-sec{
+                padding: 5px;
+                flex-direction: column;
+                width: 28%;
+                gap: 1%;
+
+                .price-sec{
+                  .sellPrice{
+                    font-size: 100%;
+                  }
+                  .strike-offer-price{
+                    .strikePrice{
+                      font-size: 78%;
+                    }
+                    .offers{
+                      font-size: 70%;
+                    }
+                  }
+                }
+
+                .flipkart-assure{
+                  width: 50%;
+
+                  img{
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+          
+        }
+      }
+  }
+}

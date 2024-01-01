@@ -1,0 +1,400 @@
+.StaticNested{
+  width: 90%;
+  margin: 0 auto;
+
+  .Subnavbar{
+    margin: 10px 0px 15px;
+    background-color: #fff;
+    height: 126px;
+    box-shadow: 0 4px 16px 0 rgba(195, 183, 183, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content-sec{
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        img{
+          width: 100%;
+          height: 64px;
+          object-fit: contain;
+        }
+        span{
+          font-size: 82%;
+          font-weight: 600;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .Carousel{
+    position: relative;
+    overflow: hidden;
+
+    button{
+      border: none;
+      outline: none;
+      width: 2.5%;
+      height: 86px;
+      box-shadow: 0 4px 16px 0 rgba(195, 183, 183, 0.2);
+    }
+
+    button:nth-child(1){
+      position: absolute;
+      left: -1px;
+      top: 96px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+    button:nth-child(3){
+      position: absolute;
+      right: -1px;
+      top: 96px;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+    img{
+      width: 100%;
+      height: 298px;
+      object-fit: cover;
+    }
+  }
+
+  .BankDetails{ 
+    margin: 10px 0px;
+    img{
+      width: 100%;
+    }
+  }
+
+  .BestMobiles{
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+
+    .row-1{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p{
+        font-size: 22px;
+        font-weight: 500;
+      }
+      svg{
+        background-color: #1c41d6;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    .row-2{
+      margin-top: 10px;
+
+      ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a{
+          width: 14%;
+          height: 262px;
+          border: 1px solid #e0e0e0;
+          border-radius: 4px;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          color: black;
+
+          img{
+            width: 100%;
+            height: 80%;
+            object-fit: contain;
+          }
+          p:nth-child(2){
+            margin-top: 12px;
+            font-size: 14.5px;
+            white-space: nowrap;
+            width: 95%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+          }
+          p:nth-child(3){
+            font-weight: 600;
+            font-size: 15px;
+          }
+        }
+        a img:hover{
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+
+  .Advertisment, .Advertisment2{
+    margin-bottom: 10px;
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      li{
+        width: 33%;
+        cursor: pointer;
+        
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .BrandDirectory {
+    color: #666;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5;
+
+    .products {
+      color: #565656;
+      padding: 0 5px;
+      border-right: 1px solid #333;
+      font-size: 12px;
+    }
+    ._2jPK0r {
+      color: #565656;
+      margin-left: 4px;
+    }
+    .heading {
+      color: #565656;
+      text-transform: uppercase;
+      margin-right: 4px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .heading {
+      font-weight: 500;
+    }
+    
+    .jF78FJ {
+      padding: 30px 0px;
+      color: #878787;
+      background-color: #f5f5f5;
+    }
+    .jF78FJ ._1o2Zk0 {
+      line-height: 16px;
+      font-size: 12px;
+    }
+    .jF78FJ ._1o2Zk0 h2{
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .jF78FJ ._1o2Zk0 h1 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) { 
+  .StaticNested{
+    width: 100%;
+
+    .Subnavbar{
+        margin: 8px 0px; 
+      .content-sec{
+        width: 98%;
+        overflow-x: scroll;
+        gap: 24px;
+
+        li{
+          img{
+            width: 80px;
+          }
+          span{
+            font-size: 82%;
+            text-align: center;
+            width: 90%;
+            white-space: nowrap;
+          }
+        }
+      }
+      .content-sec::-webkit-scrollbar {
+        display: none;
+    }
+    }
+    
+    .Carousel{
+      overflow: hidden;
+
+      img{
+        height: 100%;
+      }
+
+      button{
+        display: none;   
+      }
+    }
+
+    .BankDetails{
+
+      img{
+        object-fit: contain;
+      }
+    }
+
+    .BestMobiles{
+      .row-1{
+        p{
+          font-size: 18px;
+        }
+        svg{
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .row-2{
+        overflow-x: scroll;
+        margin-top: 15px;
+
+        ul{
+          gap: 1% ;
+
+          a{
+            height: 100%;
+            width: 100%;
+            padding: 10px 2px;
+
+            img{
+              width: 133px;
+              height: 126px;
+              object-fit: contain;
+            }
+            p:nth-child(2){
+              font-size: 13.5px;
+              text-align: center;
+              width: 100px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+      .row-2::-webkit-scrollbar {
+        display: none;
+    }
+    }
+    
+    .BrandDirectory{
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) { 
+  .StaticNested{
+    width: 95%;
+
+    .Subnavbar{
+
+      .content-sec{
+        width: 90%;
+        overflow-x: scroll;
+        gap: 20px;
+
+        li{
+          padding: 15px 0px;
+          img{
+            width: 89px;
+          }
+          span{
+            font-size: 82%;
+            text-align: center;
+            width: 90%;
+            white-space: nowrap;
+          }
+        }
+      }
+      .content-sec::-webkit-scrollbar {
+        display: none;
+    }
+    }
+    
+    .Carousel{
+      overflow: hidden;
+
+      img{
+        height: 100%;
+      }
+
+      button{
+        height: 58px;
+        width: 3.5%;
+      }
+
+      button:nth-child(1){
+        top: 27%;
+        left: 0;
+      }
+      button:nth-child(3){
+        top: 27%;
+        right: 0;
+      }
+    }
+
+    .BankDetails{
+
+      img{
+        height: 82px;
+        object-fit: cover;
+      }
+    }
+
+    .BestMobiles{
+      .row-2{
+        overflow-x: scroll;
+        margin-top: 15px;
+
+        ul{
+          gap: 26px;
+
+          a{
+            height: 100%;
+            width: 100%;
+
+            img{
+              width: 135px;
+              height: 178px;
+              object-fit: contain;
+            }
+            p:nth-child(2){
+              font-size: 13.5px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .row-2::-webkit-scrollbar {
+        display: none;
+    }
+    }
+  }
+}
